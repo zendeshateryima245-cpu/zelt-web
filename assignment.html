@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 40%;
+            border: none;
+            box-shadow: 0 0 20px rgb(185, 212, 185);
+            font-family: cursive;
+            font-weight: 400;
+        }
+        input{
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            box-shadow: 0 0 3px gray;
+            margin: 10px;
+            width: 200px;
+        }
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            font-weight: bolder;
+        }
+        h4{
+            font-family: cursive;
+            font-weight: bold;
+            color: grey;
+            background: honeydew;
+            padding: 10px;
+            width: 400px;
+            box-shadow: 0 0 20px rgb(185, 212, 185);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h4>FILL THE FORM BELOW TO SUBMIT <br> YPOUR ASSIGNMENT</h4>
+        <form action="assignment.php" method="POST" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td><label for="fullname">FULLNAME: </label>
+                    </td>
+                    <td><input type="text" placeholder="Enter your fullname" name="fullname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="matric">MATRIC.NO: </label>
+                    </td>
+                    <td><input type="text" placeholder="Enter your matric number" name="matric" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dept">DEPARTMNT: </label>
+                    </td>
+                    <td><input type="text" placeholder="Enter your department" name="dept" required></td>
+                </tr>
+                <tr>
+                    <td><label for="assfile">ASSIGNMENT FILE:</label>
+                    </td>
+                    <td><input type="file" name="assfile" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><input type="submit" value="Submit"></center></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
